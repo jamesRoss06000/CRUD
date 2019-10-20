@@ -1,10 +1,5 @@
 <?php
-$dbServerName = "localhost";
-$dbUserName = "root";
-$dbPassword = "";
-$dbName = "jeuxvideo";
-
-$conn = new PDO('mysql:host=localhost;dbname=jeuxvideo', $dbUserName, $dbPassword);
+require_once("connection.php");
 
 $gameId = $_GET['id'];
 

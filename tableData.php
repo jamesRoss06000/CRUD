@@ -1,11 +1,5 @@
 <?php
-$dbServerName = "localhost";
-$dbUserName = "root";
-$dbPassword = "";
-$dbName = "jeuxvideo";
-
-// $conn = mysqli_connect($dbServerName, $dbUserName, $dbPassword, $dbName);
-$conn = new PDO('mysql:host=localhost;dbname=jeuxvideo', $dbUserName, $dbPassword);
+require_once("connection.php");
 $sql = "SELECT * FROM jeuxvideo";
 $result = $conn->prepare($sql);
 $request = $result->execute();
