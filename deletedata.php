@@ -11,5 +11,5 @@ $gameId =$_GET['id'];
 $sql = "DELETE FROM `jeuxvideo` WHERE `Id`='$gameId'";
 $req = $conn->prepare($sql);
 $req->execute(); 
-header("Location: html.php")
+header("Location: index.php")
 ?>

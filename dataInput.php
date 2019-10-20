@@ -18,5 +18,5 @@ $conn = new PDO('mysql:host=localhost;dbname=jeuxvideo', $dbUserName, $dbPasswor
 $sql = "INSERT INTO `jeuxvideo`(`Id`, `Titre`, `Prix (Euros)`, `Date de Sortie`, `Genre`, `Origine`, `Mode`, `Connexion`, `Plateforme`) VALUES (NULL,'".$Titre."','".$Prix."','".$DateDeSortie."','".$Genre."','".$Origine."','".$Mode."','".$Connexion."','".$Plateforme."')";
 $add = $conn->prepare($sql);
 $add->execute();
-header('Location: html.php');
+header('Location: index.php');
 }

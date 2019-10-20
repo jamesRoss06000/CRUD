@@ -37,7 +37,7 @@ if (!empty($_POST)) {
     $add->bindParam(":Plateforme", $Plateforme);
     $add->bindParam(":Id", $gameId);
     $add->execute();
-    header('Location: html.php');
+    header('Location: index.php');
     exit;
 }
 $sqlSelect = "SELECT * FROM `jeuxvideo` WHERE `Id`='$gameId'";

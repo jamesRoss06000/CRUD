@@ -12,7 +12,7 @@ require_once("dataInput.php");
                 </button>
             </div>
             <div class="modal-body">
-                <form action="html.php" method="post">
+                <form action="index.php" method="post">
                     <div class="form-group col-md-12">
                         <input name="Titre" type="text" class="form-control" id="Titre" placeholder="Titre">
                     </div>
