@@ -1,9 +1,16 @@
 <?php
+$user = getenv('USERNAME');
+$pass = getenv('PASSWORD');
 
 $dbServerName = "remotemysql.com";
-$dbUserName = "TnuAWjwlHS";
-$dbPassword = "SaXj67gCa7";
-$dbName = "TnuAWjwlHS";
+$dbUserName = $user;
+$dbPassword = $pass;
+$dbName = $user;
+
+// $dbServerName = "remotemysql.com";
+// $dbUserName = "TnuAWjwlHS";
+// $dbPassword = "SaXj67gCa7";
+// $dbName = "TnuAWjwlHS";
 
 $conn = new PDO('mysql:host=remotemysql.com;dbname=TnuAWjwlHS', $dbUserName, $dbPassword);
 
