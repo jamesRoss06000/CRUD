@@ -15,7 +15,7 @@ if (!empty($_POST)) {
     $PlateformeArray = $_POST["Plateforme"];
     $Plateforme = implode(",", $PlateformeArray);
 
-    $conn = new PDO('mysql:host=localhost;dbname=jeuxvideo', $dbUserName, $dbPassword);
+    $conn = new PDO('mysql:host=localhost;dbname=TnuAWjwlHS', $dbUserName, $dbPassword);
     $sql = "UPDATE `jeuxvideo`\n"
         . "SET `Titre`=:Titre, `Prix (Euros)`=:Prix, `Date de Sortie`=:DateDeSortie, `Genre`=:Genre,\n"
         . "`Origine`=:Origine, `Mode`=:Mode, `Connexion`=:Connexion, `Plateforme`=:Plateforme\n"
