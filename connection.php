@@ -5,7 +5,7 @@ $pass = getenv('PASSWORD');
 $dbServerName = "remotemysql.com";
 $dbUserName = $user;
 $dbPassword = $pass;
-$dbName = $user;
+$dbName = 'TnuAWjwlHS';
 
 // $dbServerName = "remotemysql.com";
 // $dbUserName = "TnuAWjwlHS";
